@@ -1,0 +1,138 @@
+// CSS
+@import "../../mixins.scss";
+.footer {
+  background-color: #ddd;
+  padding: 50px 0;
+  color: #000000;
+  position: relative;
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 35px;
+    .infoheading {
+      transition: all ease 0.3s;
+      cursor: pointer;
+      font-size: 12px;
+      text-align: left;
+      margin-bottom: 25px;
+      @include md {
+        font-size: 16px;
+      }
+      &:hover {
+        color: var(--pink);
+      }
+    }
+    .infoText {
+      font-size: 12px;
+      line-height: 8px;
+      opacity: 0.5;
+      text-align: left;
+      max-width: 800px;
+      margin-bottom: 20px;
+      @include md {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .menuItems {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    @include md {
+      margin-bottom: 30px;
+      gap: 30px;
+    }
+    .menuItem {
+      transition: all ease 0.3s;
+      cursor: pointer;
+      font-size: 12px;
+      @include md {
+        font-size: 16px;
+      }
+      &:hover {
+        color: var(--pink);
+      }
+    }
+  }
+  .infoText {
+    font-size: 12px;
+    line-height: 20px;
+    opacity: 0.5;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+    @include md {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all ease 0.3s;
+      &:hover {
+        box-shadow: 0 0 0.625em var(--pink);
+        color: var(--pink);
+      }
+    }
+  }
+
+  .footer-bottom-bar {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 70px;
+    .company-copyright {
+      font-size: 12px;
+      line-height: 20px;
+      opacity: 0.5;
+      text-align: left;
+      max-width: 800px;
+      margin-bottom: 20px;
+      @include md {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+    }
+    .quicklinks {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        opacity: 0.5;
+        font-size: 12px;
+
+        li {
+          margin-left: 12px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
