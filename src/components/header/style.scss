@@ -35,6 +35,13 @@
       height: 80px;
     }
   }
+
+  .desksearchBar {
+    .desksearchInput input {
+      padding: 20px;
+      border: none;
+    }
+  }
   .menuItems {
     list-style-type: none;
     display: none;

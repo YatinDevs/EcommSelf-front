@@ -79,8 +79,8 @@ const Header = () => {
         <div className="logo" onClick={() => navigate(`/`)}>
           <img src={logo} alt="logo" />
         </div>
-        <div className="search-Bar">
-          <div className="search-Input">
+        <div className="desksearchBar">
+          <div className="desksearchInput">
             <input
               type="text"
               placeholder="Find mock tests,video courses..."
